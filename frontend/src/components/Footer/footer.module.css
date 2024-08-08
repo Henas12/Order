@@ -1,0 +1,72 @@
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 1rem 0; /* Reduced padding to decrease height */
+  text-align: left;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem; /* Reduced padding on the sides */
+}
+
+.about, .links, .payment {
+  flex: 1;
+  margin-right: 1rem; /* Reduced margin between sections */
+}
+
+.about h4, .links h4, .payment h4 {
+  font-size: 1.25rem; /* Slightly reduced font size */
+  margin-bottom: 0.5rem; /* Reduced margin below headings */
+}
+
+.about p {
+  font-size: 0.9rem; /* Slightly smaller font size for the paragraph */
+  line-height: 1.4;
+}
+
+.links ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.links ul li {
+  margin-bottom: 0.3rem; /* Reduced margin between links */
+}
+
+.links ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.links ul li a:hover {
+  text-decoration: underline;
+}
+
+.paymentLogos {
+  display: flex;
+  gap: 0.75rem; /* Reduced gap between payment logos */
+}
+
+.paymentLogos img {
+  width: 40px; /* Slightly smaller logos */
+}
+
+.developer {
+  background-color: #222;
+  text-align: center;
+  padding: 0.5rem; /* Reduced padding in the developer section */
+  margin-top: 1rem; /* Reduced margin above the developer section */
+}
+
+.developer p {
+  margin: 0;
+  font-size: 0.85rem; /* Slightly smaller font size */
+}
+
+.developer strong {
+  color: #e72929;
+}
