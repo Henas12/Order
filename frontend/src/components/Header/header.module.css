@@ -63,3 +63,16 @@
   border-radius: 100rem;
   font-size: 0.9rem;
 }
+.logoImage {
+  max-width: 100px; /* Adjust the size as needed */
+  height: auto;
+  margin-left: 10px; /* Adds some space between text and image */
+  vertical-align: middle; /* Aligns the image with the text */
+}
+
+.logo {
+  display: flex;
+  align-items: center; /* Ensures text and image are vertically aligned */
+  font-weight: bold;
+  padding: 1rem;
+}
