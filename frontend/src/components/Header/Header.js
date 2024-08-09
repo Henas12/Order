@@ -14,7 +14,7 @@ export default function Header() {
     <header className={classes.header}>
       <div className={classes.container}>
         <Link to="/" className={classes.logo}>
-          ዳዊት ለይት! 
+       
           <img src={logoImage} alt="Logo" className={classes.logoImage} />
         </Link>
     
