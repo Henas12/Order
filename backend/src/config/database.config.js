@@ -14,7 +14,13 @@ export const dbconnect = async () => {
     connect('mongodb+srv://demekehenok1689:6yV0zoHDZFS5ZWxW@cluster0.aqrlu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
       useNewUrlParser: true,
       useUnifiedTopology: true,
+          serverSelectionTimeoutMS: 50000,
     });
+
+
+       
+});
+
     await seedUsers();
     await seedFoods();
     console.log('connect successfully---');
