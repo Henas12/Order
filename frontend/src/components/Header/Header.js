@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useCart } from '../../hooks/useCart';
 import classes from './header.module.css';
 import { useAuth } from '../../hooks/useAuth';
+import logoImage from '../assets/download.png';
 
 export default function Header() {
   const { user, logout } = useAuth();
@@ -14,8 +15,10 @@ export default function Header() {
       <div className={classes.container}>
         <Link to="/" className={classes.logo}>
         ዳዊት ለይት! 
+    <img src={logoImage} alt="Logo" className={classes.logoImage} />
         </Link>
-        <nav>
+    
+    <nav>
           <ul>
             {user ? (
               <li className={classes.menu_container}>
