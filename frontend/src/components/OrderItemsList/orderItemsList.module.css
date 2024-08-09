@@ -4,11 +4,14 @@
   margin-top: 1rem;
   border-radius: 5px;
   padding: 0.5rem 1rem;
+  border-collapse: collapse;
 }
 
 .table td {
   height: 3rem;
+  padding: 0.5rem;
 }
+
 .table td img {
   width: 3rem;
   height: 3rem;
@@ -21,6 +24,58 @@
   margin-left: 0.3rem;
   color: grey;
 }
+
 .table a:hover {
   opacity: 0.9;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .table td img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .table td {
+    height: auto;
+    padding: 0.3rem;
+    font-size: 0.9rem;
+  }
+
+  .table h3 {
+    font-size: 1.2rem;
+    margin: 0.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .table {
+    padding: 0.3rem;
+  }
+
+  .table td {
+    display: block;
+    text-align: left;
+    width: 100%;
+  }
+
+  .table td img {
+    width: 2rem;
+    height: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .table h3 {
+    font-size: 1rem;
+    margin: 0.3rem;
+  }
+
+  .table tr {
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .table tr:last-child {
+    margin-bottom: 0;
+  }
 }

@@ -1,9 +1,14 @@
+
+
 .container {
   position: relative;
-  width: 35rem;
-  height: 22rem;
+  width: 100%; /* Full width for responsiveness */
+  max-width: 35rem; /* Maximum width to prevent it from getting too large */
+  height: 22rem; /* Ensure container has a height for map to be visible */
+  margin: 0 auto; /* Center the container */
   text-align: center;
 }
+
 
 .map {
   width: 100% !important;
@@ -29,4 +34,52 @@
 
 .find_location:hover {
   background-color: whitesmoke;
+}
+
+
+
+
+
+
+/* .find_location {
+  position: absolute;
+  width: 100%;
+  max-width: 12rem; 
+  min-height: 2.5rem;
+  font-size: 1rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 1000;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 0 0 1rem 1rem;
+  border: none;
+  border-top: 1px solid lightgrey;
+} */
+
+/* Hover effect for the button */
+.find_location:hover {
+  background-color: whitesmoke;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%; /* Full width on small screens */
+  }
+
+  .find_location {
+    font-size: 0.9rem; /* Slightly smaller font size on smaller screens */
+    min-height: 2rem; /* Adjust height on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .find_location {
+    max-width: 100%; /* Ensure button takes full width on very small screens */
+    font-size: 0.8rem; /* Smaller font size for very small screens */
+    min-height: 1.8rem; /* Adjust button height for very small screens */
+  }
 }

@@ -1,23 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useCart } from '../../hooks/useCart';
-import classes from './header.module.css';
 import { useAuth } from '../../hooks/useAuth';
 import logoImage from '../../assets/download.png';
+import classes from './header.module.css';
 
 export default function Header() {
   const { user, logout } = useAuth();
-
   const { cart } = useCart();
 
   return (
     <header className={classes.header}>
       <div className={classes.container}>
         <Link to="/" className={classes.logo}>
-       
+          <span>ዳዊት ለይት!</span>
           <img src={logoImage} alt="Logo" className={classes.logoImage} />
         </Link>
-    
         <nav>
           <ul>
             {user ? (
@@ -32,7 +30,6 @@ export default function Header() {
             ) : (
               <Link to="/login">Login</Link>
             )}
-
             <li>
               <Link to="/cart">
                 Cart

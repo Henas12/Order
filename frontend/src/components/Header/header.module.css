@@ -1,11 +1,13 @@
 .header {
   background: white;
-  padding: 0;
+  padding: 0.5rem 1rem; /* Add padding for better spacing */
   border-bottom: 1px solid #e72929;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
 }
 
 .header a {
   color: #af1313;
+  text-decoration: none; /* Remove underline from links */
 }
 
 .header a:hover {
@@ -15,20 +17,33 @@
 }
 
 .container {
-  margin: 0 auto;
   display: flex;
+  align-items: center; /* Align items vertically */
   justify-content: space-between;
+  max-width: 1200px; /* Limits width for large screens */
+  margin: 0 auto; /* Centers the container */
 }
 
 .logo {
-  font-weight: bold;
-  padding: 1rem;
+  display: flex;
+  align-items: center; /* Ensures text and image are vertically aligned */
+}
+
+.logoImage {
+  max-width: 100px; /* Adjust the size as needed */
+  height: auto;
+  margin-left: 10px; /* Adds some space between text and image */
 }
 
 .header ul {
   display: flex;
   list-style-type: none;
   margin: 0;
+  padding: 0;
+}
+
+.header ul li {
+  position: relative; /* Ensures dropdown menu positioning */
 }
 
 .header ul a {
@@ -36,15 +51,14 @@
   display: inline-block;
 }
 
-.menu_container {
-  position: relative;
-}
-
 .menu {
   position: absolute;
-  z-index: 1001;
+  top: 100%; /* Positions dropdown below the menu item */
+  left: 0;
   background-color: whitesmoke;
   display: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+  border-radius: 4px; /* Rounded corners */
 }
 
 .menu_container:hover .menu {
@@ -52,8 +66,13 @@
 }
 
 .menu a {
-  width: 100%;
-  min-width: 8rem;
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  background-color: #f0f0f0; /* Slightly different background on hover */
 }
 
 .cart_count {
@@ -62,17 +81,5 @@
   padding: 0.1rem 0.45rem;
   border-radius: 100rem;
   font-size: 0.9rem;
-}
-.logoImage {
-  max-width: 100px; /* Adjust the size as needed */
-  height: auto;
-  margin-left: 10px; /* Adds some space between text and image */
-  vertical-align: middle; /* Aligns the image with the text */
-}
-
-.logo {
-  display: flex;
-  align-items: center; /* Ensures text and image are vertically aligned */
-  font-weight: bold;
-  padding: 1rem;
+  margin-left: 0.5rem; /* Adds some space between cart text and count */
 }
