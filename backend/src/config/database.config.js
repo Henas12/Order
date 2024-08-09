@@ -11,7 +11,7 @@ export const dbconnect = async () => {
       console.log('connect successfully---1');
   try {
         console.log('connect successfully---2');
-    connect('mongodb+srv://demekehenok1689:6yV0zoHDZFS5ZWxW@cluster0.aqrlu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
+   await connect('mongodb+srv://demekehenok1689:6yV0zoHDZFS5ZWxW@cluster0.aqrlu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
       useNewUrlParser: true,
       useUnifiedTopology: true,
           serverSelectionTimeoutMS: 50000,  
