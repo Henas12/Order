@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useCart } from '../../hooks/useCart';
 import classes from './header.module.css';
 import { useAuth } from '../../hooks/useAuth';
-import logoImage from '../../../public/download.png'
+import logoImage from '../../assets/download.png'
 
 export default function Header() {
   const { user, logout } = useAuth();
