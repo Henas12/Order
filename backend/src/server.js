@@ -21,7 +21,7 @@ app.use(express.json());
 app.use(
   cors({
     credentials: true,
-    origin: ['https://dawit-light-restaurant.onrender.com'],
+    origin: ['http://localhost:3000'],
   })
 );
 
