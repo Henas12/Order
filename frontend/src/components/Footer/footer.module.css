@@ -1,26 +1,26 @@
 .footer {
   background-color: #333;
   color: white;
-  padding: 1rem 0; /* Ensure padding is consistent */
+  padding: 1rem 0;
   text-align: left;
 }
 
 .container {
   display: flex;
-  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  flex-wrap: wrap;
   justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1rem; /* Ensure padding is not too much on smaller screens */
+  padding: 0 1rem;
 }
 
-.about, .links, .payment {
+.about, .socialMedia, .payment {
   flex: 1;
-  margin-right: 1rem; /* Space between sections */
-  margin-bottom: 1rem; /* Margin below sections for spacing */
+  margin-right: 1rem;
+  margin-bottom: 1rem;
 }
 
-.about h4, .links h4, .payment h4 {
+.about h4, .socialMedia h4, .payment h4 {
   font-size: 1.25rem;
   margin-bottom: 0.5rem;
 }
@@ -30,22 +30,14 @@
   line-height: 1.4;
 }
 
-.links ul {
-  list-style-type: none;
-  padding: 0;
+.socialMediaIcons {
+  display: flex;
+  gap: 0.75rem;
 }
 
-.links ul li {
-  margin-bottom: 0.3rem;
-}
-
-.links ul li a {
-  color: white;
-  text-decoration: none;
-}
-
-.links ul li a:hover {
-  text-decoration: underline;
+.socialMediaIcons img {
+  width: 30px;
+  filter: invert(100%); /* Make icons white to match the footer theme */
 }
 
 .paymentLogos {
@@ -77,34 +69,30 @@
 
 @media (max-width: 768px) {
   .container {
-    flex-direction: column; /* Stack sections vertically */
-    align-items: center; /* Center align sections */
+    flex-direction: column;
+    align-items: center;
   }
 
-  .about, .links, .payment {
-    margin-right: 0; /* Remove right margin */
-    margin-bottom: 2rem; /* Increased bottom margin */
+  .about, .socialMedia, .payment {
+    margin-right: 0;
+    margin-bottom: 2rem;
   }
 
-  .paymentLogos {
-    justify-content: center; /* Center payment logos */
+  .paymentLogos, .socialMediaIcons {
+    justify-content: center;
   }
 
-  .paymentLogos img {
-    width: 30px; /* Smaller logos */
+  .paymentLogos img, .socialMediaIcons img {
+    width: 30px;
   }
 }
 
 @media (max-width: 480px) {
   .about p {
-    font-size: 0.8rem; /* Smaller font size for paragraphs */
-  }
-
-  .links ul li a {
-    font-size: 0.9rem; /* Smaller font size for links */
+    font-size: 0.8rem;
   }
 
   .developer p {
-    font-size: 0.8rem; /* Smaller font size for developer info */
+    font-size: 0.8rem;
   }
 }

@@ -16,14 +16,20 @@ export default function Footer() {
             unique Ethiopian twist. Visit us for a memorable experience!
           </p>
         </div>
-        <div className={classes.links}>
-          <h4>Quick Links</h4>
-          <ul>
-            <li><Link to="/about">About</Link></li>
-            <li><Link to="/menu">Menu</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
-            <li><Link to="/privacy-policy">Privacy Policy</Link></li>
-          </ul>
+        <div className={classes.socialMedia}>
+          <h4>Follow Us</h4>
+          <div className={classes.socialMediaIcons}>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" />
+            </a>
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" />
+            </a>
+            <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/TikTok_logo.svg" alt="TikTok" />
+            </a>
+            {/* Add more social media icons as needed */}
+          </div>
         </div>
         <div className={classes.payment}>
           <h4>Payment Methods</h4>
