@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useCart } from '../../hooks/useCart';
 import { useAuth } from '../../hooks/useAuth';
-import logoImage from '../../assets/download.png';
+import logoImage from '../../assets/Screenshot 2024-08-10 070514.png';
 import classes from './header.module.css';
 
 export default function Header() {
@@ -13,8 +13,8 @@ export default function Header() {
     <header className={classes.header}>
       <div className={classes.container}>
         <Link to="/" className={classes.logo}>
-          <span>ዳዊት ለይት!</span>
-          <img src={logoImage} alt="Logo" className={classes.logoImage} />
+          <span style={{marginRight:0, paddingRight:0}}>ዳዊት ለይት!</span>
+          <img src={logoImage} style={{ height: '50px' }}  alt="Logo" className={classes.logoImage} />
         </Link>
         <nav>
           <ul>
